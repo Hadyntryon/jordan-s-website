@@ -12,7 +12,7 @@
             --light: #f8f9fa;
             --dark: #343a40;
         }
-
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -20,41 +20,30 @@
             padding: 0;
             color: #333;
         }
-
+        
         header {
             background: var(--primary);
             color: white;
             text-align: center;
             padding: 2rem 0;
         }
-
-        .logo-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .logo-img {
-            width: 100px;
-            height: auto;
-        }
-
-        .logo-text {
+        
+        .logo {
             font-size: 2.5rem;
             font-weight: bold;
+            margin-bottom: 0.5rem;
         }
-
+        
         .tagline {
             font-style: italic;
             font-size: 1.2rem;
         }
-
+        
         nav {
             background: var(--dark);
             padding: 1rem;
         }
-
+        
         nav ul {
             display: flex;
             justify-content: center;
@@ -62,41 +51,41 @@
             padding: 0;
             margin: 0;
         }
-
+        
         nav li {
             margin: 0 1rem;
         }
-
+        
         nav a {
             color: white;
             text-decoration: none;
             font-weight: bold;
         }
-
+        
         section {
             padding: 2rem;
             max-width: 1200px;
             margin: 0 auto;
         }
-
+        
         .about {
             background: var(--light);
         }
-
+        
         .pricing {
             background: white;
         }
-
+        
         .contact {
             background: var(--light);
         }
-
+        
         h2 {
             color: var(--primary);
             text-align: center;
             margin-bottom: 2rem;
         }
-
+        
         .price-card {
             background: white;
             border-radius: 8px;
@@ -106,47 +95,47 @@
             text-align: center;
             border-top: 4px solid var(--secondary);
         }
-
+        
         .price {
             font-size: 2rem;
             color: var(--primary);
             font-weight: bold;
         }
-
+        
         .contact-info {
             text-align: center;
             font-size: 1.2rem;
         }
-
+        
         .phone {
             font-size: 1.5rem;
             font-weight: bold;
             color: var(--primary);
         }
-
+        
         footer {
             background: var(--dark);
             color: white;
             text-align: center;
             padding: 1.5rem;
         }
-
+        
         /* Responsive design */
         @media (max-width: 768px) {
             nav ul {
                 flex-direction: column;
                 align-items: center;
             }
-
+            
             nav li {
                 margin: 0.5rem 0;
             }
-
+            
             .price-cards {
                 flex-direction: column;
             }
         }
-
+        
         .price-cards {
             display: flex;
             justify-content: center;
@@ -156,12 +145,10 @@
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <div class="logo-text">Jordan's <span style="color: var(--secondary)">DREAM</span> CLEANING</div>
-        </div>
+        <div class="logo">Jordan's <span style="color: var(--secondary)">DREAM</span> CLEANING</div>
         <div class="tagline">I MAKE YOUR DREAMS OF NOT CLEANING COME TRUE</div>
     </header>
-
+    
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
@@ -169,15 +156,18 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
+    
     <section id="about" class="about">
         <h2>My Story</h2>
         <p>I have been cleaning for 14 years. In a hectic and time management environment. I have loved my job. But I had an opportunity to do something new. I left that job and thought what can I do to make my life worth something meaningful to me.</p>
+        
         <p>I had some really close friends who thought starting my own business would be really good for me. I didn't think too much of it until one day I had an opportunity to go backwards. And it hit me that I do love to clean and I do love to make people happy. And less stressed out.</p>
+        
         <p>I can do that I can help people in a meaningful way more than I thought or even expected. I see detailing the tidiest of things fun to me. I enjoy it. So here I am now starting a new journey and meeting new people making them happy so here I am starting up a new business never in my life I would never think was possible.</p>
+        
         <p>Scared as hell. But know that I can and will be able to get Jordan's Dream Cleaning off the ground.</p>
     </section>
-
+    
     <section id="pricing" class="pricing">
         <h2>Services & Pricing</h2>
         <div class="price-cards">
@@ -192,7 +182,7 @@
                     <li>Kitchen cleaning</li>
                 </ul>
             </div>
-
+            
             <div class="price-card">
                 <h3>Deep Cleaning</h3>
                 <div class="price">$180+</div>
@@ -204,7 +194,7 @@
                     <li>Window sills and tracks</li>
                 </ul>
             </div>
-
+            
             <div class="price-card">
                 <h3>Premium Cleaning</h3>
                 <div class="price">$250+</div>
@@ -220,7 +210,7 @@
         </div>
         <p style="text-align: center; margin-top: 2rem;"><em>All prices are starting points and will be adjusted based on home size and specific needs. Contact for a personalized quote!</em></p>
     </section>
-
+    
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
         <div class="contact-info">
@@ -230,7 +220,7 @@
             <p>to schedule your cleaning service!</p>
         </div>
     </section>
-
+    
     <footer>
         &copy; 2025 Jordan's Dream Cleaning.
     </footer>
